@@ -220,7 +220,7 @@ tr.pick td:first-child{box-shadow:inset 3px 0 0 var(--pc)}
 /* skills & contact */
 .skills{display:flex;flex-wrap:wrap;gap:10px}
 .skills span{font-family:var(--mono);font-size:14px;padding:10px 16px;border-radius:10px;background:var(--card);border:1px solid var(--line);color:var(--text)}
-.contact{display:grid;grid-template-columns:repeat(3,1fr);gap:14px}
+.contact{display:grid;grid-template-columns:repeat(4,1fr);gap:14px}
 .contact a{display:flex;flex-direction:column;gap:6px;background:var(--card);border:1px solid var(--line);border-radius:16px;padding:20px 22px;transition:border-color .15s,transform .15s;min-width:0}
 .contact a:hover{border-color:var(--accent);transform:translateY(-2px)}
 .contact .k{font-family:var(--mono);font-size:11.5px;letter-spacing:.12em;color:var(--mute);text-transform:uppercase}
@@ -243,6 +243,7 @@ footer .wrap{display:flex;justify-content:space-between;gap:16px;flex-wrap:wrap}
   .pcard.g .thumb{order:0}
   .ts,.pindex,.case-head,.trio,.grid3,.grid2,.core,.contact{grid-template-columns:1fr}
   .grid4{grid-template-columns:1fr 1fr}
+  .contact{grid-template-columns:1fr 1fr}
   .result{grid-template-columns:1fr}
   .result .hero-n{text-align:left}
   section{padding:64px 0}
@@ -257,6 +258,7 @@ footer .wrap{display:flex;justify-content:space-between;gap:16px;flex-wrap:wrap}
   .wrap{padding:0 18px}
   .nav li a{padding:8px 8px;font-size:13px}
   .nav li.opt{display:none}
+  .contact{grid-template-columns:1fr}
   .grid4{grid-template-columns:1fr}
   .shot.pad{padding:8px}
 }
@@ -293,6 +295,7 @@ footer .wrap{display:flex;justify-content:space-between;gap:16px;flex-wrap:wrap}
       <div class="links">
         <a class="btn primary" href="#troubleshooting">트러블슈팅 보기
           <svg viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M8 3v10M3.5 8.5 8 13l4.5-4.5"/></svg></a>
+        <a class="btn" href="https://app.notion.com/p/297254c835e680ddb93cc2798387a40a" target="_blank" rel="noopener">이력서</a>
         <a class="btn" href="https://github.com/wook099" target="_blank" rel="noopener">GitHub</a>
         <a class="btn" href="https://velog.io/@wook099/posts" target="_blank" rel="noopener">Blog</a>
         <a class="btn" href="mailto:codnrud99@naver.com">Email</a>
@@ -720,6 +723,7 @@ footer .wrap{display:flex;justify-content:space-between;gap:16px;flex-wrap:wrap}
   <div class="wrap">
     <div class="sec-head rv"><h2>연락처</h2><span class="idx">CONTACT</span></div>
     <div class="contact rv">
+      <a href="tel:01083383002"><span class="k">Phone</span><span class="v">010 8338 3002</span></a>
       <a href="mailto:codnrud99@naver.com"><span class="k">Email</span><span class="v">codnrud99@naver.com</span></a>
       <a href="https://github.com/wook099" target="_blank" rel="noopener"><span class="k">GitHub</span><span class="v">github.com/wook099</span></a>
       <a href="https://velog.io/@wook099/posts" target="_blank" rel="noopener"><span class="k">Blog</span><span class="v">velog.io/@wook099</span></a>
@@ -730,7 +734,7 @@ footer .wrap{display:flex;justify-content:space-between;gap:16px;flex-wrap:wrap}
 </main>
 
 <footer>
-  <div class="wrap"><span>© 2026 채우경</span><span class="mono">Backend Developer</span></div>
+  <div class="wrap"><span class="mono">Backend Developer</span></div>
 </footer>
 
 <script>
