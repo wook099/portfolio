@@ -643,7 +643,7 @@ footer .wrap{display:flex;justify-content:space-between;gap:16px;flex-wrap:wrap}
       <h3>대중교통 경로 조회 — 카카오 API 동시 호출 제어</h3>
       <div class="trio">
         <div><h4>상황</h4><p>코스 확정 시 구간마다 도보 경로 + 대중교통 경로를 동시에 호출</p><p class="arrow">코스당 3~40회 동시 호출 필요</p></div>
-        <div><h4>문제 상황</h4><p>순차 호출은 느려 병렬화했더니</p><p class="arrow">카카오는 호출 한도 비공개, 초과로 인한 경로 누락</p></div>
+        <div><h4>문제 상황</h4><p>순차 호출에서 가상 스레드 병렬화 도입</p><p class="arrow">카카오는 호출 한도 비공개, 초과로 인한 경로 누락</p></div>
         <div class="key"><h4>판단</h4><p>병렬 처리는 유지하고</p><p class="arrow">동시 호출 수만 세마포어로 제한</p></div>
       </div>
       <div class="grid3">
